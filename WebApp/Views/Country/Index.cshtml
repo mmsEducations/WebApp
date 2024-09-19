@@ -1,0 +1,19 @@
+﻿@using WebApp.Models;
+@model MyModel;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+ @Model.Data
+
+ <ul>
+@foreach (var data in Model.Contries)
+{
+    <li>
+         @data.Name <br /> 
+         @data.Description
+    </li>
+}
+</ul>

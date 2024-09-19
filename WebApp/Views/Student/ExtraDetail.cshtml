@@ -1,0 +1,29 @@
+﻿@model List<Teacher>
+@{
+    ViewData["Title"] = "ExtraDetail";
+}
+
+<h1>ExtraDetail</h1>
+
+<table>
+
+@foreach (Teacher teacher in Model)
+{
+   <tr>
+       <td>
+           Ad : @teacher.Name + " " + @teacher.LastName
+       </td>
+
+        <td>
+             Meslek : @teacher.Occupation
+        </td>
+
+        <td>
+            Yaş : @teacher.Age
+        </td>
+
+   </tr>
+}
+
+
+</table>
